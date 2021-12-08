@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Do Our Part</title>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body style="background-color: #fff6ef;">
+
+   
+     <!-- nav bar -->
+     
+      <div class="w3-bar w3-orange w3-large" style="position: sticky; top: 0;z-index: 1; ">
+      <a href="#" class="w3-bar-item w3-button w3-mobile "><i class="material-icons " style="color: #000000;vertical-align: middle;">home</i></a>
+      <a href="#section--1" class="w3-bar-item w3-button w3-mobile nav__links btn-scroll1"><span style="color: #000000;" ><b>The Cause</b></span></a>
+      <a href="#section--2" class="w3-bar-item w3-button w3-mobile nav__links btn-scroll2"><span style="color: #000000;" ><b>More Info</b></span></a>
+      
+      
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-green w3-right w3-tooltip btn--show-modal" ><i class="material-icons" style="color: #000000;">currency_rupee</i><span style="position:absolute;left:0.75vw;bottom:0.15rem;color: #000000;" class="w3-text w3-tiny w3-mobile" >Donate</span></a>
+      </div> 
+     
+    
+
+    <!-- header  -->
+  
+      <div class="heading w3-container w3-orange w3-center w3-card">
+        <h1 style="color: #1d1b19;"><b>Let's Do Our Part</b></h1>
+      </div> 
+    
+    
+    <!-- slideshow -->
+    <section style="margin-bottom: 60px;max-height:100vh;padding-top: 5%; z-index: -1; ">
+        <div class="w3-content w3-display-container" style="max-width:800px">
+        <div class="mySlides ">
+          <img class="w3-card w3-hover-shadow" src="images/pexels-guduru-ajay-bhargav-1043558.jpg" style="width:100%">
+          <div class="w3-display-topleft w3-container w3-padding-16 w3-black w3-opacity">
+            Deprived of living conditions,
+          </div>
+        </div>
+
+        <div class="mySlides ">
+          <img class="w3-card w3-hover-shadow" src="images/pexels-harsh-kushwaha-1676019.jpg" style="width:100%">
+          <div class="w3-display-topmiddle w3-container w3-padding-16 w3-black w3-opacity">
+            but not losing hope
+          </div>
+        </div>
+
+        <div class="mySlides ">
+          <img class="w3-card w3-hover-shadow" src="images/pexels-pixabay-46259.jpg" style="width:100%">
+          <div class="w3-display-topright w3-container w3-padding-16 w3-black w3-opacity">
+            because they believe!
+          </div>
+        </div>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+    </section>
+
+
+    <!-- cause -->
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Cause</h2>
+        <h3 class="section__header">
+          For the people around us, our people.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Food & Nutrition
+          </button>
+          <button class="btn operations__tab operations__tab--2 " data-tab="2">
+            <span>02</span>Healthcare
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Education
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active "
+        >
+          <div class="operations__icon operations__icon--1">
+            <img src="images/salad.png" alt="" style="transform: scale(10%);">
+          </div>
+          <h5 class="operations__header">
+            No one should starve.
+          </h5>
+          <p>
+            We try to reach more and more people, to cater their hunger. Trying our best to provide the adequate nutrition, battling the odds of malnutrition in new borns.
+            
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2 ">
+          <div class="operations__icon operations__icon--2">
+            <img src="images/first-aid-kit.png" alt="" style="transform: scale(10%);">
+          </div>
+          <h5 class="operations__header">
+            Health and Medical support.
+          </h5>
+          <p>
+            Healthcare for everyone, with our constant efforts to maximise reach
+            and betterment of medical services for those in need.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <img src="images/open-book.png" alt="" style="transform: scale(10%);">
+          </div>
+          <h5 class="operations__header">
+            Education for their better future.
+          </h5>
+          <p>
+            Educating kids in remote areas and to those who can't afford education. Our mission is 
+            that no one should be deprived of education due to inaccessibility or financial inability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up" id="section--2">
+      <div class="section__title">
+        <h3 class="section__header">
+          No contribution is small. <br>
+          Give your valuable contribution.
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Donate now!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" target="_blank" href="https://www.linkedin.com/in/ansh-parashar-0b3b53226/">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" target="_blank"  href="https://github.com/anshparashar/do-our-part.git/">Join the cause</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" target="_blank" href="mailto:parashar26ansh@gmail.com">Contact Us</a>
+        </li>
+      </ul>
+      <img src="images/logo_small.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/ansh-parashar-0b3b53226/"
+          >Ansh Parashar</a
+        >. Project made for The Sparks Foundation.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header" style="text-align: center;">
+        Thank You for doing your part, <br />
+         we promise to do ours!
+      </h2>
+      <form class="rzrpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IUhEmMw8AG3apA" async> </script> </form>
+      
+      
+      <p style="text-align: center;position: relative; bottom: -3rem;">Clicking the following button will redirect you to the payment gateway page, you can complete the donation there. </p>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
